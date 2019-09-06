@@ -1,6 +1,6 @@
 # Tsinghua-Online-Judge-MOOC
-1.Range
-Descriptioin
+## Range
+### Descriptioin  
 Let S be a set of n integral points on the x-axis. For each given interval [a, b], you are asked to count the points lying inside.
 
 Input
