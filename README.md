@@ -15,7 +15,7 @@ Each of the following m lines consists of two integers a and b and defines an qu
 
 The number of points in S lying inside each of the m query intervals.
 
-####Example
+**Example**
 
 *Input*
 
@@ -33,7 +33,7 @@ The number of points in S lying inside each of the m query intervals.
 
 3
 
-####Restrictions
+**Restrictions**
 
 0 <= n, m <= 5 * 10^5
 
