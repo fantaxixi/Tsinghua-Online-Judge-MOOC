@@ -114,3 +114,63 @@ A
 Time: 2 sec
 
 Memory: 256 MB
+
+## LightHouse
+
+### Description
+
+As shown in the following figure, If another lighthouse is in gray area, they can beacon each other.
+
+![](https://dsa.cs.tsinghua.edu.cn/oj/attachment/c6c8/c6c8562b88ed7fd518cacf0264ae624f59598ed7.png)
+
+For example, in following figure, (B, R) is a pair of lighthouse which can beacon each other, while (B, G), (R, G) are NOT.
+
+![](https://dsa.cs.tsinghua.edu.cn/oj/attachment/9d7f/9d7f16b4bddbee9795e12ba22fd7f88af5438aa6.png)
+
+*Input*
+
+1st line: N
+
+2nd ~ (N + 1)th line: each line is X Y, means a lighthouse is on the point (X, Y).
+
+*Output*
+
+How many pairs of lighthourses can beacon each other
+
+( For every lighthouses, X coordinates won't be the same , Y coordinates won't be the same )
+
+**Example**
+
+*Input*
+
+3
+
+2 2
+
+4 3
+
+5 1
+
+*Output*
+
+1
+
+**Restrictions**
+
+For 90% test cases: 1 <= n <= 3 * 105
+
+For 95% test cases: 1 <= n <= 106
+
+For all test cases: 1 <= n <= 4 * 106
+
+For every lighthouses, X coordinates won't be the same , Y coordinates won't be the same.
+
+1 <= x, y <= 10^8
+
+Time: 2 sec
+
+Memory: 256 MB
+
+**Hints**
+
+The range of int is usually [-231, 231 - 1], it may be too small.
