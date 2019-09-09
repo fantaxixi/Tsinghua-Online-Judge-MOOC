@@ -176,3 +176,81 @@ Memory: 256 MB
 **Hints**
 
 The range of int is usually [-231, 231 - 1], it may be too small.
+
+## Train
+### Description
+Figure 1 shows the structure of a station for train dispatching.
+
+![](images/4.png)
+
+Figure 1
+
+In this station, A is the entrance for each train and B is the exit. S is the transfer end. All single tracks are one-way, which means that the train can enter the station from A to S, and pull out from S to B. Note that the overtaking is not allowed. Because the compartments can reside in S, the order that they pull out at B may differ from that they enter at A. However, because of the limited capacity of S, no more that m compartments can reside at S simultaneously.
+
+Assume that a train consist of n compartments labeled {1, 2, …, n}. A dispatcher wants to know whether these compartments can pull out at B in the order of {a1, a2, …, an} (a sequence). If can, in what order he should operate it?
+
+*Input*
+
+Two lines:
+
+1st line: two integers n and m;
+
+2nd line: n integers separated by spaces, which is a permutation of {1, 2, …, n}. This is a compartment sequence that is to be judged regarding the feasibility.
+
+*Output*
+
+If the sequence is feasible, output the sequence. “Push” means one compartment goes from A to S, while “pop” means one compartment goes from S to B. Each operation takes up one line.
+
+If the sequence is infeasible, output a “no”.
+
+**Example 1**
+
+*Input*
+
+5 2
+
+1 2 3 5 4
+
+*Output*
+
+push
+
+pop
+
+push
+
+pop
+
+push
+
+pop
+
+push
+
+push
+
+pop
+
+pop
+
+**Example 2**
+
+*Input*
+
+5 5
+
+3 1 2 4 5
+
+*Output*
+
+No
+
+**Restrictions**
+
+1 <= n <= 1,600,000
+
+0 <= m <= 1,600,000
+
+Time: 2 sec
+
+Memory: 256 MB
