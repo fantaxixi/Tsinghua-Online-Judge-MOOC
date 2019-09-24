@@ -319,3 +319,57 @@ Figure 2
 
 In Figure 2, observe the positions of the left and right children in preorder and postorder traversal sequence
 
+## TSP
+
+### Description
+
+Shrek is a postman working in the mountain, whose routine work is sending mail to n villages. Unfortunately, road between villages is out of repair for long time, such that some road is one-way road. There are even some villages that can’t be reached from any other village. In such a case, we only hope as many villages can receive mails as possible.
+
+Shrek hopes to choose a village A as starting point (He will be air-dropped to this location), then pass by as many villages as possible. Finally, Shrek will arrived at village B. In the travelling process, each villages is only passed by once. You should help Shrek to design the travel route.
+
+
+*Input*
+
+There are 2 integers, n and m, in first line. Stand for number of village and number of road respectively.
+
+In the following m line, m road is given by identity of villages on two terminals. From v1 to v2. The identity of village is in range [1, n].
+
+
+*Output*
+
+Output maximum number of villages Shrek can pass by.
+
+
+**Example**
+
+*Input*
+4 3
+
+1 4
+
+2 4
+
+4 3
+
+
+*Output*
+3
+
+
+
+**Restrictions**
+
+1 <= n <= 1,000,000
+
+0 <= m <= 1,000,000
+
+These is no loop road in the input.
+
+Time: 2 sec
+
+Memory: 256 MB
+
+
+**Hints**
+
+Topological sorting
