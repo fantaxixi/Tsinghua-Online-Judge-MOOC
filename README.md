@@ -343,6 +343,7 @@ Output maximum number of villages Shrek can pass by.
 **Example**
 
 *Input*
+
 4 3
 
 1 4
@@ -381,12 +382,15 @@ A broadcaster wants to set up a radio broadcast transmitter in an area. There ar
 However, the company only licensed the two bands FM104.2 and FM98.6, and transmitters using the same band would interfere with each other. It is known that the signal coverage of each transmitter is a circular area with a radius of 20km. Therefore, if two towns with a distance of less than 20km use the same band, they will not be able to function properly due to band interference. Listen to the show. Now give a list of towns with distances less than 20km, and try to determine whether the company can make residents of the entire region hear the broadcasts normally.
 
 *Input*
+
 The first line is two integers n, m, which are the number of towns and the number of town pairs that are less than 20km. The next m lines, 2 integers per line, indicate that the distance between the two towns is less than 20km (numbering starts at 1).
 
 *Output*
+
 Output 1 if the requirement is met, otherwise -1.
 
 *Input sample*
+
 4 3
 
 1 2
@@ -398,7 +402,9 @@ Output 1 if the requirement is met, otherwise -1.
 *Output sample*
 
 1
+
 **Restrictions**
+
 1 ≤ n ≤ 10000
 
 1 ≤ m ≤ 30000
@@ -410,4 +416,5 @@ Time: 2 sec
 Space: 256MB
 
 **Tips**
+
 BFS
